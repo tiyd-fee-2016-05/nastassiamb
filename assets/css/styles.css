@@ -100,7 +100,7 @@ h4 {
 }
 
 #popularRepos {
-
+   float: right;
 }
 .popularRepos {
    background: #F5F5F5;
