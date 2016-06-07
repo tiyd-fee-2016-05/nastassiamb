@@ -259,9 +259,9 @@ button {
    background-image: -o-linear-gradient(top, #cdcdcd, #b3b3b3);
    background-image: linear-gradient(to bottom, #cdcdcd, #b3b3b3);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#cdcdcd, endColorstr=#b3b3b3);
    }
-
-
-
+.blockButton i {
+   color: #333;
+}
 
 /* POPULAR REPOSITORIES */
 #popularRepos {
@@ -307,8 +307,10 @@ i {
    color: #888;
 }
 
+
+/* FOOTER */
 #footer {
-   border: 2px solid #000;
+   /*border: 2px solid #000;*/
    display: inline-block;
    width: 100%;
 }
