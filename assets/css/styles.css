@@ -4,13 +4,14 @@ body {
 }
 
 #wrapper {
-   border: 2px solid black;
+   /*border: 2px solid black;*/
    margin: auto;
    width: 70%;
 }
 
 /* HEADER */
 #header {
+   /*border: 2px solid #000;*/
    display: inline-block;
    background: #F5F5F5;
    width: 100%;
@@ -56,7 +57,7 @@ a:hover {
 }
 
 #sidebar {
-   border: 2px solid #000;
+   /*border: 2px solid #000;*/
    width: 250px;
    display: block;
    margin-top: 15px;
@@ -179,10 +180,33 @@ overflow: hidden;
 
 p { padding-left: 15px; }
 
+/* TEMPORARY TAB TEXT */
+#tabsAndButtons {
+   display: inline-block;
+   padding: 20px;
+}
+.soonToBeTabs {
+   display: inline-block;
+}
+.soonToBeTabs li {
+   display: inline-block;
+   padding: 20px;
+   font-size: 14px;
+   color: #333;
+}
+.soonToBeTabs li:hover {
+   cursor: pointer;
+}
+.soonToBeTabs i {
+   color: #333;
+}
+
+
 /* FOLLOW & BLOCK BUTTONS */
 .buttons {
    display: inline;
    cursor: pointer;
+   padding-left: 100px;
 }
 button {
    text-align: center;
@@ -253,6 +277,9 @@ button {
    border: 1px solid #E5E5E5;
    padding: 8px;
 }
+#popularRepos li:hover {
+   cursor: pointer;
+}
 .popularRepos {
    background: #F5F5F5;
    border: 1px solid #E5E5E5;
@@ -260,6 +287,9 @@ button {
    font-size: 14px;
    font-weight: bold;
    color: #333;
+}
+h5:hover {
+   text-decoration: underline;
 }
 p {
    font-size: 12px;
@@ -275,4 +305,14 @@ span {
 
 i {
    color: #888;
+}
+
+#footer {
+   border: 2px solid #000;
+   display: inline-block;
+   width: 100%;
+}
+.fa-lg {
+   text-align: center;
+   color: #CCC;
 }
