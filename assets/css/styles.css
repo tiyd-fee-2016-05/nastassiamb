@@ -54,6 +54,7 @@ a:hover {
    color: #4078C0;
 }
 
+
 .user-avatar-small {
    width: 20px;
    height: 20px;
@@ -73,7 +74,10 @@ section {
    display: inline;
    margin-top: 15px;*/
    width: 15%;
-   background: red;
+   /*width: 250px;
+   display: inline;
+   margin-top: 15px;*/
+   /*background: red;*/
    float: left;
 }
 
