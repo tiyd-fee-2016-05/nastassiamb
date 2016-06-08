@@ -3,26 +3,25 @@ body {
    color: #333;
 }
 
-#wrapper {
-   border: 2px solid black;
-   margin: auto;
-   width: 70%;
-}
-
 header {
    /*border: 2px solid #000;*/
    display: inline-block;
    background: #F5F5F5;
    width: 100%;
-   height: 40px;
-   padding-top: 10px;
+   height: 50px;
    border-bottom: 1px solid #E5E5E5;
+}
+.header-content {
+   margin: auto;
+   padding-left: 200px;
+   /*padding-right: 10px;*/
+   padding-top: 10px;
    font-size: 13px;
 }
-header i {
+.header-content i {
    color: #333;
 }
-header i:hover {
+.header-content i:hover {
    color: #4078C0;
 }
 .searchBar {        /*the form part*/
@@ -39,7 +38,6 @@ header i:hover {
   /*border-radius: 3px;*/
   font-size: 13px;
 }
-
 a {
    font-weight: bold;
    color: #333;
@@ -50,30 +48,38 @@ a:hover {
    color: #4078C0;
 }
 .user-buttons {
-   float: right;
+   padding-left: 320px;
+   /*float: right;*/
 }
 .user-photo {
    width: 20px;
    height: 20px;
 }
 
+#wrapper {
+   border: 2px solid black;
+   margin: auto;
+   width: 70%;
+}
+
 section {
    border: 2px solid #000;
-   background: aqua;
-   display: block;
-   margin: auto;
-   padding: 10px;
-
+   background: tomato;
+   /*display: block;*/
+   /*margin: auto;*/
+   /*padding: 10px;*/
    margin-top: 15px;*/
    /*width: 70%;*/
-   float: left;
+   /*float: left;*/
 }
 /*user-info is here*/
 .user-sidebar {
-   border: 2px solid black;
-   background: tomato;
+   /*border: 2px solid black;*/
+   background: #FFF;
    width: 25%;
-   display: block;
+   border-bottom: 1px solid #E5E5E5;
+   padding-bottom: 20px;
+   /*display: block;*/
 }
 .user-avatar {
    width: 230px;
@@ -86,14 +92,12 @@ section {
    font-size: 26px;
 }
 .user-login {
-   border-bottom: 1px solid #E5E5E5;
-   padding-bottom: 20px;
    font-weight: 300;
    font-size: 20px;
 }
 .user-other {
-   border-bottom: 1px solid #E5E5E5;
-   padding-bottom: 20px;
+   font-size: 14px;
+   line-height: 20px;
 }
 .user-other a {
    color: #4078C0;
@@ -102,15 +106,12 @@ section {
 .user-other a:hover {
    text-decoration: underline;
 }
-
-.user-other {
-   font-size: 14px;
-   line-height: 20px;
+.user-created {
+   /*border-bottom: 1px solid #E5E5E5;
+   padding-bottom: 20px;*/
 }
-
 .followers {
    margin: 10px;
-   border-bottom: 1px solid #E5E5E5;
    cursor: pointer;
 }
 .followers li {
@@ -187,29 +188,28 @@ overflow: hidden;
 p { padding-left: 15px; }
 
 /* TEMPORARY TAB TEXT */
-#rightNav {
+#right-nav {
    display: inline-block;
    padding: 20px;
    margin-left: 15%;
+   float: right;
    /*background: black;*/
 }
-
-.soonToBeTabs {
+.soon-to-be-tabs {
    display: inline-block;
 }
-.soonToBeTabs li {
+.soon-to-be-tabs li {
    display: inline-block;
    padding: 20px;
    font-size: 14px;
    color: #333;
 }
-.soonToBeTabs li:hover {
+.soon-to-be-tabs li:hover {
    cursor: pointer;
 }
-.soonToBeTabs i {
+.soon-to-be-tabs i {
    color: #333;
 }
-
 
 /* FOLLOW & BLOCK BUTTONS */
 .buttons {
@@ -273,7 +273,7 @@ button {
 }
 
 /* POPULAR REPOSITORIES */
-#reposNav {
+#repos-nav {
    display: block;
    /*float: right;*/
    border-radius: 6px;
@@ -282,14 +282,14 @@ button {
    color: #4078C0;
    font-weight: bold;
 }
-#reposNav li {
+#repos-nav li {
    border: 1px solid #E5E5E5;
    padding: 8px;
 }
-#reposNav li:hover {
+#repos-nav li:hover {
    cursor: pointer;
 }
-.popularRepos {
+.popular-repos {
    background: #F5F5F5;
    border: 1px solid #E5E5E5;
    padding: 8px;

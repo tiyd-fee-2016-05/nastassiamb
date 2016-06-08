@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
   <body>
-  <div id="wrapper">
+
 <!-- HEADER -->
-   <header class="header-content">
+  <header class="header">
+    <div class="header-content">
       <!-- GitHub logo, lg --><a href="#"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
       <!-- Search bar --><form class="searchBar"><p class="search"></p><input name="gh-login" type="text" placeholder="Search GitHub"></input></form>
       <a href="#">Pull requests</a>
@@ -20,8 +21,11 @@
       <a href="#">Gist</a>
       <span class="user-buttons"><!-- + and down caret --><a href="#"><i class="fa fa-plus" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></li></a>
       <!-- User photo --><a href="#"><img class="user-photo" src="/Users/Nastassia/Desktop/iron_yard/TIY_assignments/WEEK_FOUR/nastassiamb/assets/images/18686350.jpeg"><i class="fa fa-caret-down" aria-hidden="true"></i></li></a></span>
+    </div>
   </header>
 
+
+<div id="wrapper">
 <!-- SIDEBAR -->
   <section>
      <div class="user-info">
@@ -45,12 +49,13 @@
            <li><a class="user-other user-email"><i class="fa fa-envelope" aria-hidden="true"></i><%- m.email %></a></li>
            <li><a class="user-other user-blog"><i class="fa fa-link" aria-hidden="true"></i><%- m.blog %></a></li>
            <li><span class="user-other user-created"><i class="fa fa-clock-o" aria-hidden="true"></i><%- m.created_at %></span></li>
-
-         <ul class="followers"><li><h4 class="followers-number"><%- m.followers %></h4>Followers</li>
+         </ul>
+         <ul class="user-sidebar followers"><li><h4 class="followers-number"><%- m.followers %></h4>Followers</li>
            <li><h4 class="starred-number">200</h4>Starred</li>
            <li><h4 class="following-number"><%- m.following %></h4>Following</li></ul>
          </ul>
        </script>
+     </div>
 
 <!-- TABS & FOLLOW/BLOCK BUTTONS -->
     <!-- <div id=”Tabs”>
@@ -73,8 +78,8 @@
     </div>
     </div> -->
 
- <div id="rightNav">
-   <div class="soonToBeTabs">
+ <div id="right-nav">
+   <div class="soon-to-be-tabs">
      <ul>
        <li><i class="fa fa-male" aria-hidden="true"></i>&nbsp;Overview</li>
        <li><i class="fa fa-bookmark-o" aria-hidden="true"></i>&nbsp;Repositories</li>
@@ -90,8 +95,8 @@
 
 
 <!-- POPULAR REPOS -->
-    <div id="reposNav">
-      <ul><li class="popularRepos">Popular repositories</li>   <!--add background color to this, and border around all..this li is smaller than the rest-->
+    <div id="repos-nav">
+      <ul><li class="popular-repos">Popular repositories</li>   <!--add background color to this, and border around all..this li is smaller than the rest-->
           <li><h5><i class="fa fa-bookmark-o" aria-hidden="true"></i>&nbsp;Spoon-Knife</h5>
             <p>This repo is for demonstration purposes only.</p>
             <span class="starred-repos">9,939&nbsp;<i class="fa fa-star" aria-hidden="true"></i></span></li>
