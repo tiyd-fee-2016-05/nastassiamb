@@ -17,7 +17,7 @@
 
 
 //--------
-
+// ...........  from Kelly's demo at https://github.com/tiyd-fee-2016-05/demos/tree/master/ajax-demo
 
 $(function () {
 
@@ -47,3 +47,26 @@ $(function () {
   }
 
 });
+
+
+// Get the template from the hacky script tag:
+var templateString = $('#myTemplate').html();
+
+// Compile the template as per usual:
+var compiledTemplate = _.template(templateString, { variable: 'm' });
+
+// Render the template out to our main div tag:
+$('#main').html(compiledTemplate({ name: 'John Smith' }));
+// .........................a middle-aged attempt below
+// <% m.repos_url.forEach(function (repomagic) { %>
+//     <div class="repomagic">
+//       <%- repomagic.name %>
+//     </div>
+//   <% }); %>
+
+// .........................an early attempt below
+// function showRepos(){
+// $.getJSON('https://api.github.com/users/octocat/repos')
+//   .done(showUser)
+//   .fail(showError);
+// };
