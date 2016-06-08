@@ -17,7 +17,9 @@
 
 
 //--------
+
 // ...........  from Kelly's demo at https://github.com/tiyd-fee-2016-05/demos/tree/master/ajax-demo
+
 
 $(function () {
 
@@ -47,6 +49,7 @@ $(function () {
   }
 
 });
+// .............. my current experimental code below, from https://github.com/tiyd-fee-2016-05/lessons/blob/master/week-4/lodash.md
 
 
 // Get the template from the hacky script tag:
