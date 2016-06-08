@@ -7,6 +7,7 @@
     <title>Octocat</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/octicons/octicons.css">
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
   <body>
@@ -14,7 +15,7 @@
 <!-- HEADER -->
   <header class="header">
     <div class="header-content">
-      <!-- GitHub logo, lg --><a href="#"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+      <!-- GitHub logo, lg --><a href="#"><span class="octicon octicon-flame"></span><!--<i class="fa fa-github fa-2x" aria-hidden="true"></i>--></a>
       <!-- Search bar --><form class="searchBar"><p class="search"></p><input name="gh-login" type="text" placeholder="Search GitHub"></input></form>
       <a href="#">Pull requests</a>
       <a href="#">Issues</a>
@@ -43,12 +44,12 @@
            <li><span class="user-name"><%- m.name || m.login %></span></li>
            <li><span class="user-login"><%- m.login %></span></li>
          </ul>
-         <ul class="user-sidebar">
-           <li><span class="user-other user-company"><i class="fa fa-users" aria-hidden="true"></i><%- m.company %></span></li>
-           <li><span class="user-other user-location"><i class="fa fa-map-marker" aria-hidden="true"></i><%- m.location %></span></li>
-           <li><a class="user-other user-email"><i class="fa fa-envelope" aria-hidden="true"></i><%- m.email %></a></li>
-           <li><a class="user-other user-blog"><i class="fa fa-link" aria-hidden="true"></i><%- m.blog %></a></li>
-           <li><span class="user-other user-created"><i class="fa fa-clock-o" aria-hidden="true"></i><%- m.created_at %></span></li>
+         <ul class="user-sidebar user-other">
+           <li><span class="user-company"><i class="fa fa-users" aria-hidden="true"></i> <%- m.company %></span></li>
+           <li><span class="user-location"><i class="fa fa-map-marker" aria-hidden="true"></i> <%- m.location %></span></li>
+           <li><a class="user-email"><i class="fa fa-envelope" aria-hidden="true"></i> <%- m.email %></a></li>
+           <li><a class="user-blog"><i class="fa fa-link" aria-hidden="true"></i> <%- m.blog %></a></li>
+           <li><span class="user-created"><i class="fa fa-clock-o" aria-hidden="true"></i> <%- m.created_at %></span></li>
          </ul>
          <ul class="user-sidebar followers"><li><h4 class="followers-number"><%- m.followers %></h4>Followers</li>
            <li><h4 class="starred-number">200</h4>Starred</li>
