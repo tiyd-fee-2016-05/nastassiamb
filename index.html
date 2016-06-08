@@ -14,13 +14,10 @@
 <!-- HEADER -->
    <header class="header-content">
       <!-- GitHub logo, lg --><a href="#"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-
       <!-- Search bar --><form class="searchBar"><p class="search"></p><input name="gh-login" type="text" placeholder="Search GitHub"></form>
-
       <a href="#">Pull requests</a>
       <a href="#">Issues</a>
       <a href="#">Gist</a>
-
       <span class="userButtons"><!-- + and down caret --><a href="#"><i class="fa fa-plus" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></li></a>
       <!-- User photo --><a href="#"><img class="userPhoto" src="/Users/Nastassia/Desktop/iron_yard/TIY_assignments/WEEK_FOUR/nastassiamb/assets/images/18686350.jpeg"><i class="fa fa-caret-down" aria-hidden="true"></i></li></a></span>
   </header>
@@ -37,20 +34,22 @@
        </script>
 
        <script id="gh-user-template" type="text/html">
-         <a class="user-link" href="<%- m.html_url %>"><img class="user-avatar" src="<%- m.avatar_url %>" alt="avatar"></a>
+         <ul class="user-sidebar">
+           <a class="user-link" href="<%- m.html_url %>"><img class="user-avatar" src="<%- m.avatar_url %>" alt="avatar"></a>
            <span class="user-name"><%- m.name || m.login %></span>
            <span class="user-login"><%- m.login %></span>
-           <span class="user-sidebar user-company"><i class="fa fa-users" aria-hidden="true"></i><%- m.company %></h3>
-           <span class="user-sidebar user-location"><i class="fa fa-map-marker" aria-hidden="true"></i><%- m.location %></h3>
-           <span class="user-sidebar user-email"><i class="fa fa-envelope" aria-hidden="true"></i><%- m.email %></h3>
-           <h3 class="user-sidebar user-blog"><i class="fa fa-link" aria-hidden="true"></i><%- m.blog %></h3>
-           <h3 class="user-sidebar user-blog"><i class="fa fa-clock-o" aria-hidden="true"></i><%- m.created_at %></h3>
+         </ul>
+         <ul class="user-sidebar">
+           <span class="user-other user-company"><i class="fa fa-users" aria-hidden="true"></i><%- m.company %></span>
+           <span class="user-other user-location"><i class="fa fa-map-marker" aria-hidden="true"></i><%- m.location %></span>
+           <a class="user-other user-email"><i class="fa fa-envelope" aria-hidden="true"></i><%- m.email %></a>
+           <a class="user-other user-blog"><i class="fa fa-link" aria-hidden="true"></i><%- m.blog %></a>
+           <span class="user-other user-created"><i class="fa fa-clock-o" aria-hidden="true"></i><%- m.created_at %></span>
 
-           <div class="followers">
-             <ul><li><h4 class="followers-number"><%- m.followers %></h4>Followers</li>
-                 <li><h4 class="starred-number">200</h4>Starred</li>
-                 <li><h4 class="following-number"><%- m.following %></h4>Following</li></ul>
-           </div>
+         <ul class="followers"><li><h4 class="followers-number"><%- m.followers %></h4>Followers</li>
+           <li><h4 class="starred-number">200</h4>Starred</li>
+           <li><h4 class="following-number"><%- m.following %></h4>Following</li></ul>
+         </ul>
        </script>
 
 <!-- TABS & FOLLOW/BLOCK BUTTONS -->
@@ -95,26 +94,26 @@
       <ul><li class="popularRepos">Popular repositories</li>   <!--add background color to this, and border around all..this li is smaller than the rest-->
           <li><h5><i class="fa fa-bookmark-o" aria-hidden="true"></i>&nbsp;Spoon-Knife</h5>
             <p>This repo is for demonstration purposes only.</p>
-            <span>9,939&nbsp;<i class="fa fa-star" aria-hidden="true"></i></span></li>
+            <span class="starred-repos">9,939&nbsp;<i class="fa fa-star" aria-hidden="true"></i></span></li>
           <li>
       </ul>
       <ul><li><h5><i class="fa fa-bookmark-o" aria-hidden="true"></i>&nbsp;Hello-World</h5>
             <p>My first repository on GitHub!</p>
-            <span>1,406&nbsp;<i class="fa fa-star" aria-hidden="true"></i></span></li>
+            <span class="starred-repos">1,406&nbsp;<i class="fa fa-star" aria-hidden="true"></i></span></li>
           <li>
       </ul>
       <ul><li><h5><i class="fa fa-bookmark-o" aria-hidden="true"></i>&nbsp;hello-world</h5>
             <p>My first repository on GitHub.</p>
-            <span>13&nbsp;<i class="fa fa-star" aria-hidden="true"></i></span></li>
+            <span class="starred-repos">13&nbsp;<i class="fa fa-star" aria-hidden="true"></i></span></li>
           <li>
       </ul>
       <ul><li><h5><i class="fa fa-bookmark-o" aria-hidden="true"></i>&nbsp;octocat.github.io</h5>
-            <span>12&nbsp;<i class="fa fa-star" aria-hidden="true"></i></span></li>
+            <span class="starred-repos">12&nbsp;<i class="fa fa-star" aria-hidden="true"></i></span></li>
           <li>
       </ul>
       <ul><li><h5><i class="fa fa-bookmark-o" aria-hidden="true"></i>&nbsp;git-consortium</h5>
             <p>This repo is for demonstration purposes only.</p>
-            <span>7&nbsp;<i class="fa fa-star" aria-hidden="true"></i></span></li>
+            <span class="starred-repos">7&nbsp;<i class="fa fa-star" aria-hidden="true"></i></span></li>
           <li>
       </ul>
     </div>
