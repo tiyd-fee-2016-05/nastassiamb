@@ -14,12 +14,12 @@
 <!-- HEADER -->
    <header class="header-content">
       <!-- GitHub logo, lg --><a href="#"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-      <!-- Search bar --><form class="searchBar"><p class="search"></p><input name="gh-login" type="text" placeholder="Search GitHub"></form>
+      <!-- Search bar --><form class="searchBar"><p class="search"></p><input name="gh-login" type="text" placeholder="Search GitHub"></input></form>
       <a href="#">Pull requests</a>
       <a href="#">Issues</a>
       <a href="#">Gist</a>
-      <span class="userButtons"><!-- + and down caret --><a href="#"><i class="fa fa-plus" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></li></a>
-      <!-- User photo --><a href="#"><img class="userPhoto" src="/Users/Nastassia/Desktop/iron_yard/TIY_assignments/WEEK_FOUR/nastassiamb/assets/images/18686350.jpeg"><i class="fa fa-caret-down" aria-hidden="true"></i></li></a></span>
+      <span class="user-buttons"><!-- + and down caret --><a href="#"><i class="fa fa-plus" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></li></a>
+      <!-- User photo --><a href="#"><img class="user-photo" src="/Users/Nastassia/Desktop/iron_yard/TIY_assignments/WEEK_FOUR/nastassiamb/assets/images/18686350.jpeg"><i class="fa fa-caret-down" aria-hidden="true"></i></li></a></span>
   </header>
 
 <!-- SIDEBAR -->
@@ -35,16 +35,16 @@
 
        <script id="gh-user-template" type="text/html">
          <ul class="user-sidebar">
-           <a class="user-link" href="<%- m.html_url %>"><img class="user-avatar" src="<%- m.avatar_url %>" alt="avatar"></a>
-           <span class="user-name"><%- m.name || m.login %></span>
-           <span class="user-login"><%- m.login %></span>
+           <li><a class="user-link" href="<%- m.html_url %>"><img class="user-avatar" src="<%- m.avatar_url %>" alt="avatar"></a></li>
+           <li><span class="user-name"><%- m.name || m.login %></span></li>
+           <li><span class="user-login"><%- m.login %></span></li>
          </ul>
          <ul class="user-sidebar">
-           <span class="user-other user-company"><i class="fa fa-users" aria-hidden="true"></i><%- m.company %></span>
-           <span class="user-other user-location"><i class="fa fa-map-marker" aria-hidden="true"></i><%- m.location %></span>
-           <a class="user-other user-email"><i class="fa fa-envelope" aria-hidden="true"></i><%- m.email %></a>
-           <a class="user-other user-blog"><i class="fa fa-link" aria-hidden="true"></i><%- m.blog %></a>
-           <span class="user-other user-created"><i class="fa fa-clock-o" aria-hidden="true"></i><%- m.created_at %></span>
+           <li><span class="user-other user-company"><i class="fa fa-users" aria-hidden="true"></i><%- m.company %></span></li>
+           <li><span class="user-other user-location"><i class="fa fa-map-marker" aria-hidden="true"></i><%- m.location %></span></li>
+           <li><a class="user-other user-email"><i class="fa fa-envelope" aria-hidden="true"></i><%- m.email %></a></li>
+           <li><a class="user-other user-blog"><i class="fa fa-link" aria-hidden="true"></i><%- m.blog %></a></li>
+           <li><span class="user-other user-created"><i class="fa fa-clock-o" aria-hidden="true"></i><%- m.created_at %></span></li>
 
          <ul class="followers"><li><h4 class="followers-number"><%- m.followers %></h4>Followers</li>
            <li><h4 class="starred-number">200</h4>Starred</li>

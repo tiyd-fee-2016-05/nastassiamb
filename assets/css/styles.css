@@ -11,7 +11,7 @@ body {
 
 header {
    /*border: 2px solid #000;*/
-   /*display: inline-block;*/
+   display: inline-block;
    background: #F5F5F5;
    width: 100%;
    height: 40px;
@@ -25,15 +25,19 @@ header i {
 header i:hover {
    color: #4078C0;
 }
-form {
+.searchBar {        /*the form part*/
+  /*border: 1px solid #000;*/
   display: inline-block;
-  width: 100px;
-  padding-right: 40px;
+  width: 375px;
+  /*margin-right: 20px;*/
+  color: #E5E5E5;
 }
-.searchBar {
-   border: 1px solid #E5E5E5;
-   color: #E5E5E5;
-   font-size: 13px;
+.searchBar input {    /*where you actually type*/
+  width: 350px;
+  min-height: 10px;
+  padding: 5px;
+  /*border-radius: 3px;*/
+  font-size: 13px;
 }
 
 a {
@@ -45,8 +49,10 @@ a {
 a:hover {
    color: #4078C0;
 }
-
-.userPhoto {
+.user-buttons {
+   float: right;
+}
+.user-photo {
    width: 20px;
    height: 20px;
 }
