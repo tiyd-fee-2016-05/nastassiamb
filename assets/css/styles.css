@@ -9,12 +9,6 @@ body {
    width: 70%;
 }
 
-/* HEADER */
-/*.main-content {
-  max-width: 400px;
-  margin: auto;
-}*/
-
 #header {
    /*border: 2px solid #000;*/
    display: inline-block;
@@ -96,10 +90,6 @@ h2 {
    font-weight: 300;
    font-size: 20px;
 }
-
-/*.name {
-   padding-bottom: 20px;
-}*/
 
 .subheadInfo {
    border-bottom: 1px solid #E5E5E5;
