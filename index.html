@@ -12,37 +12,46 @@
   <body>
   <div id="wrapper">
 <!-- HEADER -->
-    <main class="main-content">
-    <div id="header">
-      <!-- GitHub logo, lg --><a href="#"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+   <header class="header-content">
+      <!-- GitHub logo, lg --><a href="#"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
 
-      <!-- Search bar --><form class="searchBar">
-        <p class="search"></p>
-        <input name="gh-login" type="text" placeholder="Search GitHub">
-      </form> 
+      <!-- Search bar --><form class="searchBar"><p class="search"></p><input name="gh-login" type="text" placeholder="Search GitHub"></form>
 
-
-    </li>
-      <a href="#">Pull requests</a></li>
-      <a href="#">Issues</a></li>
-      <a href="#">Gist</a></li>
+      <a href="#">Pull requests</a>
+      <a href="#">Issues</a>
+      <a href="#">Gist</a>
 
       <span class="userButtons"><!-- + and down caret --><a href="#"><i class="fa fa-plus" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></li></a>
       <!-- User photo --><a href="#"><img class="userPhoto" src="/Users/Nastassia/Desktop/iron_yard/TIY_assignments/WEEK_FOUR/nastassiamb/assets/images/18686350.jpeg"><i class="fa fa-caret-down" aria-hidden="true"></i></li></a></span>
-    </div>
-
-
+  </header>
 
 <!-- SIDEBAR -->
   <section>
      <div class="user-info">
-       <div id="sidebar">
 
-     <div class="subheadInfo">
-     </div>
-    </div>
+     <!-- SCRIPTS -->
+       <script id="gh-error-template" type="text/html">
+         <div class="error">
+           <%- m.message %>
+         </div>
+       </script>
 
+       <script id="gh-user-template" type="text/html">
+         <a class="user-link" href="<%- m.html_url %>"><img class="user-avatar" src="<%- m.avatar_url %>" alt="avatar"></a>
+           <span class="user-name"><%- m.name || m.login %></span>
+           <span class="user-login"><%- m.login %></span>
+           <span class="user-sidebar user-company"><i class="fa fa-users" aria-hidden="true"></i><%- m.company %></h3>
+           <span class="user-sidebar user-location"><i class="fa fa-map-marker" aria-hidden="true"></i><%- m.location %></h3>
+           <span class="user-sidebar user-email"><i class="fa fa-envelope" aria-hidden="true"></i><%- m.email %></h3>
+           <h3 class="user-sidebar user-blog"><i class="fa fa-link" aria-hidden="true"></i><%- m.blog %></h3>
+           <h3 class="user-sidebar user-blog"><i class="fa fa-clock-o" aria-hidden="true"></i><%- m.created_at %></h3>
 
+           <div class="followers">
+             <ul><li><h4 class="followers-number"><%- m.followers %></h4>Followers</li>
+                 <li><h4 class="starred-number">200</h4>Starred</li>
+                 <li><h4 class="following-number"><%- m.following %></h4>Following</li></ul>
+           </div>
+       </script>
 
 <!-- TABS & FOLLOW/BLOCK BUTTONS -->
     <!-- <div id=”Tabs”>
@@ -110,65 +119,18 @@
       </ul>
     </div>
   </div>
-  </section>
+</section>
 
-
-</main>
-
+</div>
 
 <!-- extra icon: fa-plus-square-o-->
 
-<div id="footer">
-   <p>© 2016 GitHub, Inc</p><!-- FOOTER LINKS HERE --><i class="fa fa-github fa-lg" aria-hidden="true"></i>
-</div>
+<!-- <div id="footer">
+   <p>© 2016 GitHub, Inc</p>FOOTER LINKS HERE<i class="fa fa-github fa-lg" aria-hidden="true"></i>
+</div> -->
 </div>
 
 <!------------------------------------------------->
-
-
-
-<script id="gh-error-template" type="text/html">
-  <div class="error">
-    <%- m.message %>
-  </div>
-</script>
-
-<script id="gh-user-template" type="text/html">
-  <a class="user-link" href="<%- m.html_url %>">
-    <img class="user-avatar" src="<%- m.avatar_url %>" alt="avatar">
-    <h1 class="user-name">
-      <%- m.name || m.login %>
-    </h1>
-    <h2 class="user-login">
-      <%- m.login %>
-    </h2>
-    <h3 class="user-company"><i class="fa fa-users" aria-hidden="true"></i>
-      <%- m.company %>
-    </h3>
-    <h3 class="user-location"><i class="fa fa-map-marker" aria-hidden="true"></i>
-      <%- m.location %>
-    </h3>
-    <h3 class="user-email"><i class="fa fa-envelope" aria-hidden="true"></i>
-      <%- m.email %>
-    </h3>
-    <h3 class="user-blog"><i class="fa fa-link" aria-hidden="true"></i>
-      <%- m.blog %>
-    </h3>
-    <h3 class="user-blog"><i class="fa fa-clock-o" aria-hidden="true"></i>
-      <%- m.created_at %>
-    </h3>
-
-    <div class="followers">
-      <ul><li><h4 class="followers-number"><%- m.followers %></h4>Followers</li>
-          <li><h4 class="starred-number">200</h4>Starred</li>
-          <li><h4 class="following-number"><%- m.following %></h4>Following</li>
-      </ul>
-    </div>
-  </a>
-</script>
-
-
-
 
 
   <script src="/Users/Nastassia/Desktop/iron_yard/TIY_assignments/WEEK_FOUR/nastassiamb/assets/js/scripts.js" type="text/javascript"></script>

@@ -9,7 +9,7 @@ body {
    width: 70%;
 }
 
-#header {
+header {
    /*border: 2px solid #000;*/
    display: inline-block;
    background: #F5F5F5;
@@ -19,10 +19,10 @@ body {
    border-bottom: 1px solid #E5E5E5;
    font-size: 13px;
 }
-#header i {
+header i {
    color: #333;
 }
-#header i:hover {
+header i:hover {
    color: #4078C0;
 }
 form {
@@ -54,21 +54,12 @@ a:hover {
 }
 
 section {
+   /*border: 2px solid #000;*/
    width: 100%;
    height: 200px;
    /*background: aqua;*/
    margin: auto;
    padding: 10px;
-}
-
-#sidebar {
-   border: 2px solid #000;
-   /*width: 250px;
-   display: inline;
-   margin-top: 15px;*/
-   width: 15%;
-   /*background: red;*/
-   float: left;
 }
 
 .user-avatar {
@@ -77,14 +68,13 @@ section {
    border-radius: 6px;
 }
 
-
-h1 {
+.user-name {
    padding-top: 10px;
    font-weight: bold;
    font-size: 26px;
 }
 
-h2 {
+.user-login {
    border-bottom: 1px solid #E5E5E5;
    padding-bottom: 20px;
    font-weight: 300;
@@ -102,7 +92,8 @@ h2 {
 .subheadInfo a:hover {
    text-decoration: underline;
 }
-h3 {
+
+.user-sidebar {
    font-size: 14px;
    line-height: 20px;
 }
@@ -319,7 +310,7 @@ i {
 /* FOOTER */
 #footer {
    /*border: 2px solid #000;*/
-   display: inline-block;
+   /*display: inline-block;*/
    width: 100%;
 }
 .fa-lg {
