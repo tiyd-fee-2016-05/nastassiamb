@@ -42,8 +42,8 @@ $(function () {
   }
 
   function show(template, model) {
-    var fn = _.template($('#' + template).html(), { variable: 'm' });
-    $('.user-info').html(fn(model));
+    var fn = _.template($('#' + template).html(), { variable: 'm' });        //any template we get with a #(id)
+    $('.user-info').html(fn(model));                //insert the template where the m is specified in the HTML
   }
 
 });
