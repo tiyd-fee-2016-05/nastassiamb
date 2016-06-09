@@ -1,25 +1,5 @@
 
-// var greeting = _.template('<h1>Hello, <%- m.name %>!</h1>', { variable: 'm' });
-// var renderedHtml = greeting({ name: 'Poe Dameron' });
-// $('#main').html(renderedHtml);
-
-//--------
-
-// var views = {};
-//
-// $('script[type="text/html"]').each(function () {
-//   var script = $(this);
-//   views[script.attr('id')] = _.template(script.html(), { variable: 'm' });
-//   script.remove();
-// });
-//
-// $('#main').html(views.myTemplate({ name: 'Jane Doe' }));
-
-
-//--------
-
-// ...........  from Kelly's demo at https://github.com/tiyd-fee-2016-05/demos/tree/master/ajax-demo
-
+// ........... Code below is from Kelly's demo at https://github.com/tiyd-fee-2016-05/demos/tree/master/ajax-demo
 
 $(function () {
 
@@ -30,7 +10,7 @@ $(function () {
     $.getJSON('https://api.github.com/users/' + ghLogin)
       .done(showUser,getSecondJason)
       .fail(showError);
-
+// .done and .fail are types of handlers
 
   });
 
@@ -51,13 +31,11 @@ $(function () {
   }
 
 });
-
+// ..........This isn't working to add the username to the repos url yet ...........
 var ghLogin = $('input[name="gh-login"]').val();
 function getSecondJason(){
 $.getJSON('https://api.github.com/users/' + ghLogin + "/repos")
-.done(showRepos)
-// need to replace showUser with a new template created in html
-;
+.done(showRepos);
 };
 
 
@@ -69,12 +47,6 @@ function show2(template, model) {
   var fn = _.template($('#' + template).html(), { variable: 'm' });
   $('.gh-repo-template').html(fn(model));
 };
-
-
-//   show2('gh-repo-template', user);
-// }
-//
-//   function show2(template, model) {
 
 
 // .............. some experimental code below, from https://github.com/tiyd-fee-2016-05/lessons/blob/master/week-4/lodash.md
@@ -92,7 +64,7 @@ function show2(template, model) {
 
 
 
-// .........................a middle-aged attempt below
+// .........................a later attempt below
 // <% m.repos_url.forEach(function (repomagic) { %>
 //     <div class="repomagic">
 //       <%- repomagic.name %>
