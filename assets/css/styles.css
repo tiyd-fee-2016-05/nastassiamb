@@ -3,127 +3,121 @@ body {
    color: #333;
 }
 
-#wrapper {
-   /*border: 2px solid black;*/
-   margin: auto;
-   width: 70%;
-}
-
-/* HEADER */
-/*.main-content {
-  max-width: 400px;
-  margin: auto;
-}*/
-
-#header {
+header {
    /*border: 2px solid #000;*/
    display: inline-block;
    background: #F5F5F5;
    width: 100%;
-   height: 40px;
-   padding-top: 10px;
+   height: 50px;
    border-bottom: 1px solid #E5E5E5;
+}
+.header-content {
+   margin: auto;
+   padding-left: 200px;
+   /*padding-right: 10px;*/
+   padding-top: 10px;
    font-size: 13px;
 }
-#header i {
+.header-content .octicon {      /* Keep formatting of octicon & font-awesome (i) since both are used */
+   width: 32px;                     /* to make "mega" add this to the start of the class name in HTML: mega-octicon */
+   text-align: center;              /* from GH website: "octicons look best in sizes that are multiples of 16px" */
    color: #333;
-}
-#header i:hover {
+  }
+.header-content .octicon:hover {
    color: #4078C0;
 }
-form {
-  display: inline-block;
-  width: 100px;
-  padding-right: 40px;
+.header-content i {
+   width: 16px;
+   text-align: center;
+   color: #333;
+   padding-right: 5px;
 }
-
-.searchBar {
-   border: 1px solid #E5E5E5;
+.header-content i:hover {      /* Keep formatting of octicon & font-awesome (i) since both are used */
+   color: #4078C0;
+}
+.searchBar {                  /*the form part*/
+   /*border: 1px solid #000;*/
+   display: inline-block;
+   width: 375px;
    color: #E5E5E5;
+}
+.searchBar input {           /*where you actually type*/
+   width: 350px;
+   min-height: 10px;
+   padding: 5px;
+   /*border-radius: 3px;*/
    font-size: 13px;
 }
-
 a {
    font-weight: bold;
    color: #333;
    text-decoration: none;
    padding: 8px;
 }
-
 a:hover {
    color: #4078C0;
 }
-
-
-.user-avatar-small {
+.user-buttons {
+   padding-left: 280px;
+}
+.user-photo {
    width: 20px;
    height: 20px;
 }
 
-section {
-   width: 100%;
-   height: 200px;
-   /*background: aqua;*/
+#wrapper {
+   /*border: 2px solid black;*/
    margin: auto;
-   padding: 10px;
+   width: 70%;
 }
 
-#sidebar {
-   border: 2px solid #000;
-   /*width: 250px;*/
-   display: inline;
+section {
+   /*border: 2px solid #000;*/
+   /*background: tomato;*/
    margin-top: 15px;*/
-   width: 15%;
-   /*width: 250px;
-   display: inline;
-   margin-top: 15px;*/
-   /*background: red;*/
-   float: left;
 }
-
+/*user-info is here*/
+.user-sidebar {
+   /*border: 2px solid black;*/
+   background: #FFF;
+   width: 25%;
+   border-bottom: 1px solid #E5E5E5;
+   padding-bottom: 20px;
+   /*display: block;*/
+}
+.user-sidebar .octicon {
+   width: 16px;
+   text-align: center;
+   color: #888;
+}
+.user-sidebar a {
+   padding: 0;
+   color: #4078C0;
+   font-weight: normal;
+}
+.user-sidebar a:hover {
+   text-decoration: underline;
+}
 .user-avatar {
    width: 230px;
    height: 230px;
    border-radius: 6px;
 }
-
-
-h1 {
-   padding-top: 10px;
+.user-name {
    font-weight: bold;
    font-size: 26px;
 }
-
-h2 {
-   border-bottom: 1px solid #E5E5E5;
-   padding-bottom: 20px;
+.user-login {
    font-weight: 300;
    font-size: 20px;
 }
-
-/*.name {
-   padding-bottom: 20px;
-}*/
-
-.subheadInfo {
-   border-bottom: 1px solid #E5E5E5;
-   padding-bottom: 20px;
-}
-.subheadInfo a {
-   color: #4078C0;
-   font-weight: normal;
-}
-.subheadInfo a:hover {
-   text-decoration: underline;
-}
-h3 {
+.user-other {
+   padding-top: 20px;
    font-size: 14px;
-   line-height: 20px;
+   line-height: 25px;
 }
-
 .followers {
    margin: 10px;
-   border-bottom: 1px solid #E5E5E5;
    cursor: pointer;
 }
 .followers li {
@@ -142,20 +136,18 @@ h4 {
 }
 
 /* TABS */
-#Tabs ul {
+/*#Tabs ul {
 padding: 0px;
 margin: 0px;
 margin-left: 10px;
 list-style-type: none;
 }
-
 #Tabs ul li {
 display: inline-block;
 clear: none;
 float: left;
 height: 24px;
 }
-
 #Tabs ul li a {
 position: relative;
 margin-top: 16px;
@@ -166,25 +158,22 @@ padding-left: 10px;
 background: #f6f6f6;
 z-index: 9999;
 border: 1px solid #ccc;
-border-bottom: 0px;
-
+border-bottom: 0px;*/
 /* The following four lines are to make the top left and top right corners of each tab rounded. */
--moz-border-radius-topleft: 4px;
+/*-moz-border-radius-topleft: 4px;
 border-top-left-radius: 4px;
 -moz-border-radius-topright: 4px;
-border-top-right-radius: 4px;
+border-top-right-radius: 4px;*/
 /* end of rounded borders */
-
+/*
 width: 130px;
 color: #000000;
 text-decoration: none;
 font-weight: bold;
 }
-
 #Tabs ul li a:hover {
 text-decoration: underline; // a very simple effect when hovering the mouse on tab
 }
-
 #Tabs #Content_Area { // this is the css class for the content displayed in each tab
 padding: 0 15px;
 clear:both;
@@ -195,34 +184,36 @@ top: 20px;
 z-index: 5;
 height: 150px;
 overflow: hidden;
-}
-
-p { padding-left: 15px; }
+}*/
+/*p { padding-left: 15px; }*/
 
 /* TEMPORARY TAB TEXT */
-#rightNav {
+#right-nav {
+   /*border: 2px solid #000;*/
    display: inline-block;
-   padding: 20px;
+   width: 74%;
+   padding-left: 20px;
    margin-left: 15%;
+   float: right;
    /*background: black;*/
 }
-
-.soonToBeTabs {
+.soon-to-be-tabs {
    display: inline-block;
 }
-.soonToBeTabs li {
+.soon-to-be-tabs li {
    display: inline-block;
    padding: 20px;
    font-size: 14px;
    color: #333;
 }
-.soonToBeTabs li:hover {
+.soon-to-be-tabs li:hover {
    cursor: pointer;
 }
-.soonToBeTabs i {
+.soon-to-be-tabs .octicon {
+   width: 16px;
+   text-align: center;
    color: #333;
 }
-
 
 /* FOLLOW & BLOCK BUTTONS */
 .buttons {
@@ -284,10 +275,14 @@ button {
 .blockButton i {
    color: #333;
 }
+.octicon-info {
+   color: #333;
+ }
 
 /* POPULAR REPOSITORIES */
-#reposNav {
+#repos-nav {
    display: block;
+   /*position: absolute;*/
    /*float: right;*/
    border-radius: 6px;
    font-size: 14px;
@@ -295,21 +290,23 @@ button {
    color: #4078C0;
    font-weight: bold;
 }
-#reposNav li {
+#repos-nav li {
    border: 1px solid #E5E5E5;
    padding: 8px;
 }
-#reposNav li:hover {
+#repos-nav li:hover {
    cursor: pointer;
 }
-.popularRepos {
+#repos-nav .octicon-repo {
+   color: #888;
+}
+.popular-repos {
    background: #F5F5F5;
    border: 1px solid #E5E5E5;
    padding: 8px;
    font-size: 14px;
    font-weight: bold;
    color: #333;
-   float: right;
 }
 h5:hover {
    text-decoration: underline;
@@ -319,22 +316,18 @@ p {
    color: #888;
    font-weight: normal;
 }
-span {
-   float: right;
+.starred-repos {
+   /*float: right;*/
    color: #888;
    font-weight: normal;
 }
 
 
-i {
-   color: #888;
-}
-
 
 /* FOOTER */
 #footer {
    /*border: 2px solid #000;*/
-   display: inline-block;
+   /*display: inline-block;*/
    width: 100%;
 }
 .fa-lg {
