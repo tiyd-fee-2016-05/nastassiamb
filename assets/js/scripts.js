@@ -1,5 +1,5 @@
 
-// ........... Code below is from Kelly's demo at https://github.com/tiyd-fee-2016-05/demos/tree/master/ajax-demo
+// ........... Code below is borrowed and modified from Kelly's demo at https://github.com/tiyd-fee-2016-05/demos/tree/master/ajax-demo
 
 $(function () {
 
@@ -11,7 +11,7 @@ $(function () {
       .done(showUser,getSecondJason)
       .fail(showError);
 // .done and .fail are types of handlers
-
+// getSecondJason, above, was our attempt to combine the user info and the repo info so it would all return with one function
   });
 
   function showUser(user) {
