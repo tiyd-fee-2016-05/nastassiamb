@@ -18,28 +18,35 @@ header {
    padding-top: 10px;
    font-size: 13px;
 }
-.header-content .octicon {
-    width: 16px;
-    text-align: center;
-    color: #333;
+.header-content .octicon {      /* Keep formatting of octicon & font-awesome (i) since both are used */
+   width: 32px;                     /* to make "mega" add this to the start of the class name in HTML: mega-octicon */
+   text-align: center;              /* from GH website: "octicons look best in sizes that are multiples of 16px" */
+   color: #333;
   }
-
 .header-content .octicon:hover {
    color: #4078C0;
 }
-.searchBar {        /*the form part*/
-  /*border: 1px solid #000;*/
-  display: inline-block;
-  width: 375px;
-  /*margin-right: 20px;*/
-  color: #E5E5E5;
+.header-content i {
+   width: 16px;
+   text-align: center;
+   color: #333;
+   padding-right: 5px;
 }
-.searchBar input {    /*where you actually type*/
-  width: 350px;
-  min-height: 10px;
-  padding: 5px;
-  /*border-radius: 3px;*/
-  font-size: 13px;
+.header-content i:hover {      /* Keep formatting of octicon & font-awesome (i) since both are used */
+   color: #4078C0;
+}
+.searchBar {                  /*the form part*/
+   /*border: 1px solid #000;*/
+   display: inline-block;
+   width: 375px;
+   color: #E5E5E5;
+}
+.searchBar input {           /*where you actually type*/
+   width: 350px;
+   min-height: 10px;
+   padding: 5px;
+   /*border-radius: 3px;*/
+   font-size: 13px;
 }
 a {
    font-weight: bold;
@@ -51,8 +58,7 @@ a:hover {
    color: #4078C0;
 }
 .user-buttons {
-   padding-left: 320px;
-   /*float: right;*/
+   padding-left: 280px;
 }
 .user-photo {
    width: 20px;
@@ -60,20 +66,15 @@ a:hover {
 }
 
 #wrapper {
-   border: 2px solid black;
+   /*border: 2px solid black;*/
    margin: auto;
    width: 70%;
 }
 
 section {
-   border: 2px solid #000;
-   background: tomato;
-   /*display: block;*/
-   /*margin: auto;*/
-   /*padding: 10px;*/
+   /*border: 2px solid #000;*/
+   /*background: tomato;*/
    margin-top: 15px;*/
-   /*width: 70%;*/
-   /*float: left;*/
 }
 /*user-info is here*/
 .user-sidebar {
@@ -83,6 +84,11 @@ section {
    border-bottom: 1px solid #E5E5E5;
    padding-bottom: 20px;
    /*display: block;*/
+}
+.user-sidebar .octicon {
+   width: 16px;
+   text-align: center;
+   color: #888;
 }
 .user-sidebar a {
    padding: 0;
@@ -98,7 +104,6 @@ section {
    border-radius: 6px;
 }
 .user-name {
-   padding-top: 10px;
    font-weight: bold;
    font-size: 26px;
 }
@@ -184,7 +189,7 @@ overflow: hidden;
 
 /* TEMPORARY TAB TEXT */
 #right-nav {
-   border: 2px solid #000;
+   /*border: 2px solid #000;*/
    display: inline-block;
    width: 74%;
    padding-left: 20px;
@@ -204,7 +209,9 @@ overflow: hidden;
 .soon-to-be-tabs li:hover {
    cursor: pointer;
 }
-.soon-to-be-tabs i {
+.soon-to-be-tabs .octicon {
+   width: 16px;
+   text-align: center;
    color: #333;
 }
 
@@ -268,6 +275,9 @@ button {
 .blockButton i {
    color: #333;
 }
+.octicon-info {
+   color: #333;
+ }
 
 /* POPULAR REPOSITORIES */
 #repos-nav {
@@ -286,6 +296,9 @@ button {
 }
 #repos-nav li:hover {
    cursor: pointer;
+}
+#repos-nav .octicon-repo {
+   color: #888;
 }
 .popular-repos {
    background: #F5F5F5;
@@ -309,10 +322,6 @@ p {
    font-weight: normal;
 }
 
-
-i {
-   color: #888;
-}
 
 
 /* FOOTER */
